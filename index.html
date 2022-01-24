@@ -1,0 +1,672 @@
+
+DAY-11 
+<br>
+QUESTION:<br>
+
+    7.Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)<br><br> 
+
+
+QUESTION:<br>
+ 
+3.Design a contact us form with all fields as required.<br><br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+
+<style>
+  body{
+    background-color:rgb(176, 247, 119);
+}
+
+hr{
+    background-color:black;
+}
+h3{
+    color:#0f2e10;
+    text-transform: uppercase;
+    font-size: larger;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(5, 21, 29);
+    border-radius: 2px; 
+    background-color:rgb(195, 233, 245);
+}
+
+#fname,#lname,#mail,#num,#state,#country{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+label{
+    font-size: 20px;
+}
+
+#btn1{
+    font-size: larger;
+    background-color:rgb(219, 238, 50);
+    border-radius: 4px;
+}
+#btn1:hover{
+    background-color:rgb(50, 194, 238);
+    cursor: pointer;
+
+}
+
+#Subject{
+    width:80% ;
+    height: 200px;
+    border-radius: 4px;
+}
+
+</style>
+</head>
+<body>
+    <h3 class="form" align="center">Contact form</h3>
+    <div class="container">
+       <form action="">
+        <br><br/>
+           <label for="">First Name</label><br/>
+           <input type="text" name="firstname" id="fname" placeholder="Your First Name" /><br /><br/>
+
+           <label for="">Last Name</label><br/>
+           <input type="text" name="lastname" id="lname" placeholder="Your Last Name" /> <br/><br/>
+
+           <label for="">E-mail </label><br/>
+           <input type="email" name="email" id="mail" placeholder="email" /><br /><br/>
+
+           <label for="">Phone</label><br/>
+           <input type="text" name="number" id="num" placeholder="phone number" /><br><br/>
+
+           <label for=" ">State</label><br/>
+           <select id="state" name="state">
+               <option value="Tamilnadu">Tamilnadu</option>
+               <option value="Kerala" >Kerala</option>
+               <option value="Karnataka">Karnataka</option>
+               <option value="Maharashtra">Maharashtra</option>
+               <option value="Punjab">Punjab</option>
+               <option value="Uttar Pradesh">Uttar Pradesh</option>
+               <option value="Rajasthan">Rajasthan</option>
+               <option value="Odisha">Odisha</option>
+           </select><br /><br/>
+
+           <label for=" ">Country</label><br/>
+           <select id="country" name="country">
+               <option value="India">India</option>
+               <option value="canada">Canada</option>
+               <option value="usa">USA</option>
+           </select>
+
+          <br/><br/>
+           <label for="">Subject</label><br>
+           <textarea id="Subject" name="Subject" placeholder="Write something" ></textarea>
+
+          <br><br/>
+           <input type="button" value="Submit" id="btn1" onclick="save"/>
+           <br><br>
+    </form>
+    </div>
+
+<br>   
+<hr>
+
+
+QUESTION:<br>
+4.Use certain HTML elements to display the following in a HTML page.<br>
+Programming Language
+JavaScript
+Angular
+React
+Vue.js
+Python
+Django Framework
+Flask Framework
+Java
+Spring
+Maven
+Hibernate
+Database
+MySQL
+MongoDB
+Cansandra
+
+<br><br>
+ANSWER:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Programming Language</li>
+
+        <ul>
+            <li>JavaScript</li>
+            <ol type="a">
+                <li>Angular</li>
+                <li>React</li>
+                <li>Vue.js</li>
+            </ol>
+
+            <li>Python</li>
+            <ol type="a">
+                <li>Django Framework</li>
+                <li>Flask Framework</li>
+            </ol>
+
+            <li>Java</li>
+            <ol type="a">
+                <li>Spring</li>
+                <li>Maven</li>
+                <li>Hibernate</li>
+            </ol>
+        </ul>
+
+        <li>Database</li>
+        <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Cansandra</li>
+        </ul>
+    </ul>
+</body>
+</html>
+<hr>
+
+QUESTION:<br>
+
+5.Create an element that helps you to open the https://google.com in separate new tab.<br><br>
+
+ANSWER:<br><br>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://google.com"target="_blank">Click here to open Google in a new tab</a>
+
+<br><br>
+<hr>
+
+
+QUESTION:<br>
+
+6.In the form, add two radio buttons with grouping them for employee type(Salaried and own business)<br><br>
+
+ANSWER:<br><br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        
+           <label for="">Employee Type:</label>
+           Salaried:
+           <input type="radio" name="Salaried" id="Salaried" /> 
+
+           Own business:
+           <input type="radio" name="OwnBusiness" id="business"  /> 
+    
+    </form>
+  <hr>
+  
+  QUESTION: <br><br>
+   <br>
+   <hr>
+
+  QUESTION:<br>
+  8.Use the table tag to design given image Click here.<br><br>
+  
+  ANSWER:<br>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  </head>
+  <body>
+      <h4 align="center">Health Chart</h4>
+      <table align="center" border="2" cellspacing="0" cellpadding="15">
+          
+          <tr align="center">
+              <td rowspan="2">State of Health</td>
+              <td colspan="2">Fasting Value</td>
+              <td>After Eating</td>
+          </tr>
+          <tr align="center">
+              <td>Minimum</td>
+              <td>Maximum</td>
+              <td>2 hours after eating</td>
+          </tr>
+          <tr align="center">
+              <td>Healthy</td>
+              <td>70</td>
+              <td>100</td>
+              <td>Less than 140</td>
+          </tr>
+          <tr align="center">
+              <td>Pre-Diabetes</td>
+              <td>101</td>
+              <td>126</td>
+              <td>140 to 200</td>
+          </tr>
+          <tr align="center">
+              <td>Diabetes</td>
+              <td>More than 126</td>
+              <td>N/A</td>
+              <td>More than 200</td>
+          </tr>
+  
+      </table>
+  <br><br>
+  <hr>
+
+  QUESTION:<br>
+
+9.Write HTML input tags snippet to show default values for all Form elements.<br><br>
+
+ANSWER:<br><br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- input type text -->
+    <h2>Text Types</h2>
+    <form action="">
+      <label for="">Text Box</label>
+      <input type="text" name="text" id="text" />
+    </form>
+
+    <!-- input type password -->
+    <h2>Password Types</h2>
+    <form action="" method="">
+      <label for="">Password</label>
+      <input type="password" name="password" id="password" />
+    </form>
+
+    <!-- input type email -->
+    <h2>Email Types</h2>
+    <form action="" method="get">
+      <label for="">Email</label>
+      <input type="email" name="email" id="email" />
+    </form>
+
+    <!-- input type number -->
+    <h2>Number Types</h2>
+    <form action="" method="">
+      <label for="">Number</label>
+      <input type="number" name="number" id="number" />
+    </form>
+
+    <!-- input type range -->
+    <h2>Range Types</h2>
+    <form action="" method="">
+      <label for="">Range</label>
+      <input type="range" name="range" id="range" />
+    </form>
+
+    <!-- input type search -->
+    <h2>Search Types</h2>
+    <form action="" method="post">
+      <label for="">Search</label>
+      <input type="search" name="search" id="search" />
+    </form>
+
+    <!-- input type radio -->
+    <h2>Radio Types</h2>
+    <form action="">
+      <label for="">Gender</label>
+      Male:
+      <input type="radio" name="demo" id="gender" /> Female:<input
+        type="radio"
+        name="demo"
+        id="gender"
+      />
+      Others: <input type="radio" name="demo" />
+    </form>
+
+    <!-- input type CHeckbox type -->
+    <form action="">
+      <label for="">Highest Qualification</label>
+      <input type="checkbox" name="checkbox" id="checkbox" />
+      <label for="">B.Tech</label>
+      <input type="checkbox" name="checkbox" id="checkbox" />
+      <label for="">M.Tech</label>
+      <input type="checkbox" name="checkbox" id="checkbox" />
+    </form>
+
+    <!-- input type date -->
+    <h2>Date Types</h2>
+    <form action="" method="">
+      <label for="">Date</label>
+      <input type="date" name="date" id="date" />
+    </form>
+
+    <!-- input type time -->
+    <h2>Time Types</h2>
+    <form action="" method="">
+      <label for="">Time</label>
+      <input type="time" name="time" id="time" />
+    </form>
+
+    <!-- input type datetime -->
+    <h2>Date Time Types</h2>
+    <form action="" method="">
+      <label for="">Date Time</label>
+      <input type="datetime" name="datetime" id="datetime" />
+    </form>
+
+    <!-- input type Number -->
+    <h2>Number Types</h2>
+    <form action="" method="">
+      <label for="">Number</label>
+      <input
+        type="number"
+        min="0"
+        max="101"
+        step="10"
+        name="number"
+        id="number"
+      />
+    </form>
+
+    <!-- input type color -->
+    <h2>Color Types</h2>
+    <form action="" method="">
+      <label for="">Color</label>
+      <input type="color" name="color" id="color" />
+    </form>
+<br><br>
+<hr>
+
+QUESTION:<br>
+10. In your, HTML page add the below line and Highlight it without using any CSS.
+"HTML & CSS is awesome"<br><br>
+
+ANSWER:<br><br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul> 
+       <li><mark>HTML & CSS is awesome.</mark></li>
+    </ul>
+
+<br><hr>
+
+QUESTION:<br>
+
+11.Create an HTML page, which should contain all types of input elements.<br><br>
+
+ANSWER:<br><br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- BUTTON -->
+    <div>1.Button:
+        <input type="button" value="button"/> <br></div><br>
+    
+    <!-- CHECKBOX -->
+    <div> 2.Checkbox:
+        <input type="checkbox" value="checkbox"/></div> <br>
+    
+    <!-- COLOR -->
+    <div>3.Color: <input type="color" value="black"/> </div><br><br>
+    
+    <!-- DATE -->
+    <div>4.Date:<input type="date" value="date"/> <br></div><br>
+    
+    <!-- DATETIME -->
+    <div>5.Enter date and time manually:<input type="datetime" value="8 Jan,10 am"/><br></div><br>
+    
+    <!-- DATE local TIME -->
+    <div>6.Date and Time: <input type="datetime-local" value="datetime-local"/><br><br></div>
+    
+    <!-- EMAIL -->
+    <div>7.Enter your email:   <input type="email" value="email"/> <br></div><br>
+    
+    <!-- FILE -->
+    <div>8.Upload file here: <input type="file" value="file"/></div> <br>
+    
+    <!-- HIDDEN -->
+    <div>9.Hidden:<input type="hidden" value="hidden"/></div> <br>
+    
+    <!-- IMAGE -->
+    <div> 10.Image: <input type="image" value="image"/> <br></div><br>
+
+    <!-- MONTH & YEAR -->
+    <div>11.Enter Month: <input type="month" value="month"/></div> <br>
+
+    <!-- NUMBER -->
+    <div>12.Enter number: <input type="number" value="123456"/> </div><br>
+    
+    <!-- PASSWORD -->
+    <div>13.Enter your password: <input type="password" value="password"/> <br></div><br>
+    
+    <!-- RADIO -->
+    <div> 14.Radio: <input type="radio" value="password" name="password"/> </div><br>
+    
+    <!-- RANGE -->
+    <div> 15.Range: <input type="range" value="range" name="range"/></div><br>
+
+    <!-- RESET -->
+    <div> 15.Range: <input type="Reset" value="reset" name="reset"/></div><br>
+    
+    <!-- SEARCH -->
+    <div>16.Search: <input type="search" value="search" name="search"/></div><br>
+    
+    <!-- SUBMIT -->
+    <div>17.Submit:<input type="submit" value="Submit" name="submit" /></div><br>
+
+    <!-- TEL -->
+    <div>18.Tel: <input type="tel" value="" /></div><br>
+
+    <!-- TEXT -->
+    <div>19.Text: <input type="text" value="text" name="text" /></div><br>
+
+    <!-- TIME -->
+    <div>20.Time: <input type="time" value="time" name="time" /></div><br>
+
+    <!-- URL -->
+    <div>21.URL: <input type="url" value="url" name="url" /></div><br>
+
+    <!-- SUBMIT -->
+    <div>22.Week: <input type="week" value="week" name="week" /></div><br>
+
+<br>
+<br><br>
+<br><br>
+<br><br>
+
+<br>
+
+    <br><br> 
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Task7.css"/>
+
+        <style>
+        
+          .abc {
+              /* margin: 0;
+              padding: 0; */
+              font-family: sans-serif;
+          }
+          
+          .container1{
+              width: 700px;
+              height:400px;
+              text-align:justify;
+              top: 50%;
+              left: 50%;
+              position: absolute;
+              transform: translate(-50%, -50%);
+              box-sizing: border-box;
+              border: 2px solid black;
+              background-color: white;
+              
+          }
+          
+          
+          .header1{
+              color:white;
+              background-color: red;
+              text-align:center;
+              
+          }
+          
+          #address1{
+              float: left;
+          
+          }
+          #add{
+              float: left;
+          }
+          
+              </style>
+          
+
+    </head>
+    <body class="abc">
+      <div class="container1">
+        <h3 class="header1">Yes!I want to susbcribe to Mag-O-Zine</h3>
+        
+        <label for="">First Name</label>
+           <input type="text" name="firstname1" id="fname1" placeholder="Joe" />
+    
+           <label id="right" for="">Last Name</label>
+           <input type="text" name="lastname1" id="lname1" placeholder="Schmegeggie" /> <br/><br/>
+        
+           <label id="add" for="">Address</label>
+           <input type="text" name="address1" id="address1" placeholder="1001 Washington Street" /> <br/><br/>
+    
+           <label id="cty" for="">City</label>
+           <input type="text" name="city1" id="city1" placeholder="Antfown" /> 
+    
+           <label id="stt" for="">State</label>
+           <input type="text" name="state1" id="state1" placeholder="CA" /> 
+    
+           <label id="zip" for="">ZIP</label>
+           <input type="text" name="zip1" id="zip1" placeholder="99999" /> <br/><br/>
+    
+           <form action="">
+            <label for="">Subscribe for:</label>
+            <input type="checkbox" name="checkbox" id="checkbox1" />
+            <label for="">1 year($19.95)</label>
+            <input type="checkbox" name="checkbox" id="checkbox2" />
+            <label for="">2 years($35.00)</label>
+            <input type="checkbox" name="checkbox" id="checkbox3" />
+          </form>
+          <br><br>
+    
+          <div>Send me more information about:</div><br>
+    
+          <input type="checkbox" name="checkbox" id="checkbox4" />
+          <label for="">Computer-Zine</label>
+          <br>
+          <input type="checkbox" name="checkbox" id="checkbox5" />
+          <label for="">Fishing-Zine</label>
+          <br>
+          <input type="checkbox" name="checkbox" id="checkbox6" />
+          <label for="">Cat-O-Zine</label>
+    
+    
+    </div>
+    <hr>
+  </body>
+  </html>   
+
+
+
+</body>
+</html>
+
+</body>
+</html>
+
+</body>
+</html>
+  
+</body>
+</html>
+
+</body>
+</html>
+
+
